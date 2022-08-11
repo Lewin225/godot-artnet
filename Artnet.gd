@@ -51,7 +51,9 @@ func _physics_process(delta):
 	new_packet.append(low_universe)
 	# net
 	new_packet.append(high_universe)
-	# Length Hi
+	
+	# Length Hi TODO: This isn't correct and wont work for a large number of channels
+	# the int needs to be converted to little endian - find out how to do this in godot
 	new_packet.append(0)
 	new_packet.append(len(dta))
 	# Length lo

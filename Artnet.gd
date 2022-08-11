@@ -1,3 +1,7 @@
+# Example of sending ARTNET dmx packets from godot engine
+# child.get_data() on line 39 returns a packed byte array of that fixture's dmx data
+
+
 extends Node
 
 var udp
